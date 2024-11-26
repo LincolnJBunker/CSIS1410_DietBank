@@ -1,10 +1,13 @@
 package dietBank;
 
+import java.io.Serializable;
+
 /**
  * class User contains the fields, constructor, and getter methods that define what a user is
  * A user will have a Username, Email, and Password
  */
-public class User {
+public class User implements Serializable{
+	private static final long serialVersionUID = 4842828555159137740L;
 	private final String username;
 	private final String email;
 	private final String password;
@@ -32,15 +35,15 @@ public class User {
 	
 	/**
 	 * Getter method for email
-	 * @return the users emai
+	 * @return the users email
 	 */
 	public String getEmail() {
 		return email;
 	}
 	
 	/**
-	 * Getter method for email
-	 * @return the users email
+	 * Getter method for password
+	 * @return the users password
 	 */
 	public String getPassword() {
 		return password;
